@@ -1,0 +1,43 @@
+{
+  "name": "pi-5",
+  "version": "1.0.0",
+  "description": "Projeto integrador 5o semestre SENAC",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mthzera/PI-5.git"
+  },
+  "keywords": [
+    "PI-5",
+    "SENAC",
+    "GRUPO",
+    "OS",
+    "TRAPALHOES"
+  ],
+  "author": "Os Trapalhoes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mthzera/PI-5/issues"
+  },
+  "homepage": "https://github.com/mthzera/PI-5#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "consign": "^0.1.6",
+    "eslint": "^4.18.1",
+    "express": "^4.16.3",
+    "express-oas-generator": "^0.1.25",
+    "express-validator": "^5.0.3",
+    "geolib": "^2.0.24",
+    "mongo": "^0.1.0",
+    "mongoose": "^5.0.7",
+    "mysql2": "^1.5.3",
+    "node-where": "^1.1.0",
+    "nodemailer": "^4.6.4",
+    "pino": "^4.13.0",
+    "pm2": "^2.10.1",
+    "sequelize": "^4.37.4"
+  }
+}

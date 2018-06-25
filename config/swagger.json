@@ -1,0 +1,486 @@
+{
+    "info": {
+      "title": "pi-5",
+      "version": "1.0.0",
+      "license": {
+        "name": "ISC"
+      },
+      "description": "[Specification JSON](/api-spec)\n\nProjeto integrador 5o semestre SENAC"
+    },
+    "paths": {
+      "/agenda": {
+        "post": {
+          "summary": "/agenda",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": []
+        },
+        "get": {
+          "summary": "/agenda",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": []
+        }
+      },
+      "/agenda/{id}": {
+        "put": {
+          "summary": "/agenda/{id}",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true
+            }
+          ]
+        },
+        "get": {
+          "summary": "/agenda/{id}",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true
+            }
+          ]
+        }
+      },
+      "/avaliacao": {
+        "post": {
+          "summary": "/avaliacao",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": []
+        },
+        "get": {
+          "summary": "/avaliacao",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": []
+        }
+      },
+      "/categoria": {
+        "post": {
+          "summary": "/categoria",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": []
+        },
+        "get": {
+          "summary": "/categoria",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": []
+        }
+      },
+      "/categoria/{id}": {
+        "put": {
+          "summary": "/categoria/{id}",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true
+            }
+          ]
+        },
+        "get": {
+          "summary": "/categoria/{id}",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true
+            }
+          ]
+        }
+      },
+      "/dadosBancarios": {
+        "post": {
+          "summary": "/dadosBancarios",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": []
+        },
+        "get": {
+          "summary": "/dadosBancarios",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": []
+        }
+      },
+      "/dadosBancarios/{id}": {
+        "put": {
+          "summary": "/dadosBancarios/{id}",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true
+            }
+          ]
+        }
+      },
+      "/endereco": {
+        "post": {
+          "summary": "/endereco",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": []
+        }
+      },
+      "/endereco/usuario/{id}": {
+        "get": {
+          "summary": "/endereco/usuario/{id}",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true
+            }
+          ]
+        }
+      },
+      "/endereco/{id}": {
+        "get": {
+          "summary": "/endereco/{id}",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true
+            }
+          ]
+        },
+        "put": {
+          "summary": "/endereco/{id}",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true
+            }
+          ]
+        },
+        "delete": {
+          "summary": "/endereco/{id}",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true
+            }
+          ]
+        }
+      },
+      "/login": {
+        "post": {
+          "summary": "/login",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": []
+        }
+      },
+      "/pedido": {
+        "post": {
+          "summary": "/pedido",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": []
+        }
+      },
+      "/pedido/{idPedido}": {
+        "put": {
+          "summary": "/pedido/{idPedido}",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "idPedido",
+              "in": "path",
+              "required": true
+            }
+          ]
+        },
+        "get": {
+          "summary": "/pedido/{idPedido}",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "idPedido",
+              "in": "path",
+              "required": true
+            }
+          ]
+        }
+      },
+      "/pedido/prestador/{idPrestador}": {
+        "get": {
+          "summary": "/pedido/prestador/{idPrestador}",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "idPrestador",
+              "in": "path",
+              "required": true
+            }
+          ]
+        }
+      },
+      "/pedido/usuario/{idUsuario}": {
+        "get": {
+          "summary": "/pedido/usuario/{idUsuario}",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "idUsuario",
+              "in": "path",
+              "required": true
+            }
+          ]
+        }
+      },
+      "/confirmarPedido/{idPedido}": {
+        "put": {
+          "summary": "/confirmarPedido/{idPedido}",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "idPedido",
+              "in": "path",
+              "required": true
+            }
+          ]
+        }
+      },
+      "/prestador": {
+        "post": {
+          "summary": "/prestador",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": []
+        },
+        "get": {
+          "summary": "/prestador",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": []
+        }
+      },
+      "/prestador/{id}": {
+        "put": {
+          "summary": "/prestador/{id}",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true
+            }
+          ]
+        }
+      },
+      "/prestador/proximos": {
+        "get": {
+          "summary": "/prestador/proximos",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": []
+        }
+      },
+      "/resetarSenha": {
+        "post": {
+          "summary": "/resetarSenha",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": []
+        }
+      },
+      "/servicos": {
+        "post": {
+          "summary": "/servicos",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": []
+        },
+        "get": {
+          "summary": "/servicos",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": []
+        }
+      },
+      "/servicos/prestador/{idPrestador}": {
+        "get": {
+          "summary": "/servicos/prestador/{idPrestador}",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "idPrestador",
+              "in": "path",
+              "required": true
+            }
+          ]
+        }
+      },
+      "/servicos/{servico}": {
+        "get": {
+          "summary": "/servicos/{servico}",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "servico",
+              "in": "path",
+              "required": true
+            }
+          ]
+        }
+      },
+      "/servicos/{id}": {
+        "put": {
+          "summary": "/servicos/{id}",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true
+            }
+          ]
+        },
+        "delete": {
+          "summary": "/servicos/{id}",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true
+            }
+          ]
+        },
+        "get": {
+          "summary": "/servicos/{id}",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true
+            }
+          ]
+        }
+      },
+      "/trocarSenha": {
+        "post": {
+          "summary": "/trocarSenha",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": []
+        }
+      },
+      "/usuario": {
+        "post": {
+          "summary": "/usuario",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": []
+        }
+      },
+      "/usuario/{id}": {
+        "get": {
+          "summary": "/usuario/{id}",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true
+            }
+          ]
+        },
+        "put": {
+          "summary": "/usuario/{id}",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true
+            }
+          ]
+        }
+      }
+    },
+    "swagger": "2.0"
+  }
