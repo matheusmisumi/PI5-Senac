@@ -35,7 +35,7 @@
     "mongoose": "^5.0.7",
     "mysql2": "^1.5.3",
     "node-where": "^1.1.0",
-    "nodemailer": "^4.6.4",
+    "nodemailer": "^6.4.16",
     "pino": "^4.13.0",
     "pm2": "^2.10.1",
     "sequelize": "^4.37.4"
